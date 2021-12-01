@@ -1,99 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Css -->
+  <link rel="stylesheet" href="dist/style.css">
+  <!-- JavaScript -->
+  <script defer src="dist/script.js"></script>
+
   <title>Frontend Mentor | [Blogr]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  Product
+  <header class="header">
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="images/logo.svg" alt="logo blogr">
+      </div>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+      <div class="nav__mobile" id="toggleMobile">
+        <i class='bx bx-menu'></i>
+      </div>
 
-  Company
+      <ul class="nav__list" id="menu">
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Product
+            <i class='bx bx-chevron-up arrow-icon'></i>
+          </a>
 
-  About
-  Team
-  Blog
-  Careers
+          <ul class="nav__dropdown">
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">Overview</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">Pricing</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">Marketplace</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">Features</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">Integrations</a>
+            </li>
+          </ul>
+        </li>
 
-  Connect
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Company
+            <i class='bx bx-chevron-up arrow-icon'></i>
+          </a>
 
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
+          <ul class="nav__dropdown">
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">About</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">Team</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">Blog</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">Careers</a>
+            </li>
+          </ul>
+        </li>
 
-  A modern publishing platform
-  Grow your audience and build your online brand
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Connect
+            <i class='bx bx-chevron-up arrow-icon'></i>
+          </a>
 
-  Start for Free
-  Learn More
+          <ul class="nav__dropdown">
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">Contact</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">Newsletter</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">LinkedIn</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-  Designed for the future
+      <div class="nav__userAcess">
+        <a href="#" class="nav__btn-login">Login</a>
+        <a href="#" class="btn nav__btn-signup">Sign Up</a>
+      </div>
+    </nav>
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
+    <div class="header__info">
+      <h1 class="title-secondary">A modern publishing platform</h1>
+      <p class="paragraphy-secondary">
+        Grow your audience and build your online brand
+      </p>
 
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="header__buttons">
+        <a href="#" class="btn header__btn-start">Start for Free</a>
+        <a href="#" class="btn header__btn-learn">Learn More</a>
+      </div>
+    </div>
+  </header>
 </body>
+
 </html>
